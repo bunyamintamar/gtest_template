@@ -2,9 +2,9 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "BUILD_TEST",
+			"label": "BUILD",
 			"type": "shell",
-			"command": "cd BUILD && cmake .. . && make clean && make && cd test && ./codeTest",
+			"command": "cd BUILD && cmake .. . && make clean && make && ./main",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",

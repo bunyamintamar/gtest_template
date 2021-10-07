@@ -1,18 +1,17 @@
 ######### CMAKE VERSION ########################
 cmake_minimum_required(VERSION 3.16)
-set(This myProject)
+set(This develop)
 
 ######### PROJECT NAME #########################
 project(${This} C CXX)
 
 ######### FOLDERS ##############################
-add_subdirectory(develop)
-add_subdirectory(test)
 
 ######### HEADERS - SOURCES ####################
-file(GLOB SOURCES "develop/*.cpp")
+file(GLOB SOURCES "*.cpp")
 
 ######### OTHERS ###############################
+#add_executable(main ${SOURCES})
 
 ######### LIBRARIES ############################
 add_library(${This} STATIC ${SOURCES})

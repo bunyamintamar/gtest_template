@@ -1,21 +1,25 @@
 ######### CMAKE VERSION ########################
 cmake_minimum_required(VERSION 3.16)
-set(This myProject)
+set(This codeTest)
 
 ######### PROJECT NAME #########################
 project(${This} C CXX)
 
 ######### FOLDERS ##############################
-add_subdirectory(develop)
-add_subdirectory(test)
+add_subdirectory(googletest)
+include_directories(googletest/include)
 
 ######### HEADERS - SOURCES ####################
-file(GLOB SOURCES "develop/*.cpp")
+file(GLOB SOURCES "*.cpp")
 
 ######### OTHERS ###############################
+add_executable(${This} ${SOURCES})
 
 ######### LIBRARIES ############################
-add_library(${This} STATIC ${SOURCES})
+target_link_libraries(${This} PUBLIC
+    gtest
+    myProject
+)
 
 ################################################
 # Bunyamin TAMAR - bunyamintamar@yandex.com

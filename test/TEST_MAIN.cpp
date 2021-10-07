@@ -2,7 +2,7 @@
 
 /* USER CODE BEGIN 0  -  include files */
 
-#include "myfunctions.h"
+#include "../develop/myFunctions.h"
 
 /* USER CODE END */
 
@@ -11,9 +11,14 @@
 
 TEST(testName, subTest_1)
 {
-    ASSERT_EQ(add(10, 22), 32);
+    EXPECT_EQ(add(22, 10), 12);
+}
+
+TEST(testName, subTest_2)
+{
+    EXPECT_EQ(add(22, 10), 13);
 }
 
 /* USER CODE END 1 */
 
-GTEST_RUN();
+TEST_RUN();
