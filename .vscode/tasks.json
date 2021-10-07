@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "BUILD",
+			"type": "shell",
+			"command": "cd BUILD && cmake .. . && make clean && make && ./main",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "CLEAN",
+			"type": "shell",
+			"command": "cd BUILD && make clean",
+			"problemMatcher": []
+		},
+		{
+			"label": "CMAKE",
+			"type": "shell",
+			"command": "cd BUILD && cmake .. .",
+			"problemMatcher": []
+		},
+		{
+			"label": "CREATE build folder",
+			"type": "shell",
+			"command": "mkdir BUILD",
+			"problemMatcher": []
+		},
+		{
+			"label": "DELETE build folder",
+			"type": "shell",
+			"command": "rm -r BUILD",
+			"problemMatcher": []
+		}
+	]
+}
