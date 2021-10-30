@@ -28,7 +28,7 @@ select **REBUILD_APP**
 *You can see output of your code*
 
 # STEP 6
-type **CTRL+B**
+type **CTRL+B**  
 select **REBUILD_TEST**  
 *You can see output of your test*  
 
