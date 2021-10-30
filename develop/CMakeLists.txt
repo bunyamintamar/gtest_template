@@ -11,11 +11,7 @@ project(${This} C CXX)
 file(GLOB SOURCES "*.cpp")
 
 ######### OTHERS ###############################
-#add_executable(main ${SOURCES})
+add_executable(main ${SOURCES})
 
 ######### LIBRARIES ############################
 add_library(${This} STATIC ${SOURCES})
-
-################################################
-# Bunyamin TAMAR - bunyamintamar@yandex.com
-################################################
