@@ -5,10 +5,6 @@ set(This codeTest)
 ######### PROJECT NAME #########################
 project(${This} C CXX)
 
-######### FOLDERS ##############################
-add_subdirectory(googletest)
-include_directories(googletest/include)
-
 ######### HEADERS - SOURCES ####################
 file(GLOB SOURCES "*.cpp")
 
@@ -18,9 +14,6 @@ add_executable(${This} ${SOURCES})
 ######### LIBRARIES ############################
 target_link_libraries(${This} PUBLIC
     gtest
-    myProject
+    pthread
+    develop
 )
-
-################################################
-# Bunyamin TAMAR - bunyamintamar@yandex.com
-################################################
