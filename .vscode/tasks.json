@@ -2,9 +2,39 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "REBUILD_TEST",
+			"type": "shell",
+			"command": "rm -r BUILD && mkdir BUILD && cd BUILD && cmake .. && make clean && make && test/codeTest",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
 			"label": "BUILD_TEST",
 			"type": "shell",
-			"command": "cd BUILD && cmake .. . && make clean && make && cd test && ./codeTest",
+			"command": "cd BUILD && cmake .. && make && test/codeTest",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "REBUILD",
+			"type": "shell",
+			"command": "rm -r BUILD && mkdir BUILD && cd BUILD && cmake ../develop && make clean && make && rm -r cmake* CMakeCache.txt CMakeFiles/ && ./main",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "BUILD",
+			"type": "shell",
+			"command": "cd BUILD && cmake ../develop && make && rm -r cmake* CMakeCache.txt CMakeFiles/ && ./main",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
