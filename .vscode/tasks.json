@@ -4,7 +4,7 @@
 		{
 			"label": "REBUILD_TEST",
 			"type": "shell",
-			"command": "rm -r BUILD && mkdir BUILD && cd BUILD && cmake .. && make clean && make && test/codeTest",
+			"command": ".vscode/tasks.sh rebuild_test",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
@@ -14,7 +14,7 @@
 		{
 			"label": "BUILD_TEST",
 			"type": "shell",
-			"command": "cd BUILD && cmake .. && make && test/codeTest",
+			"command": ".vscode/tasks.sh build_test",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
@@ -22,9 +22,9 @@
 			}
 		},
 		{
-			"label": "REBUILD",
+			"label": "REBUILD_APP",
 			"type": "shell",
-			"command": "rm -r BUILD && mkdir BUILD && cd BUILD && cmake ../develop && make clean && make && rm -r cmake* CMakeCache.txt CMakeFiles/ && ./main",
+			"command": ".vscode/tasks.sh rebuild_app",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
@@ -32,9 +32,9 @@
 			}
 		},
 		{
-			"label": "BUILD",
+			"label": "BUILD_APP",
 			"type": "shell",
-			"command": "cd BUILD && cmake ../develop && make && rm -r cmake* CMakeCache.txt CMakeFiles/ && ./main",
+			"command": ".vscode/tasks.sh build_app",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
@@ -44,25 +44,13 @@
 		{
 			"label": "CLEAN",
 			"type": "shell",
-			"command": "cd BUILD && make clean",
+			"command": ".vscode/tasks.sh Clean",
 			"problemMatcher": []
 		},
 		{
 			"label": "CMAKE",
 			"type": "shell",
-			"command": "cd BUILD && cmake .. .",
-			"problemMatcher": []
-		},
-		{
-			"label": "CREATE build folder",
-			"type": "shell",
-			"command": "mkdir BUILD",
-			"problemMatcher": []
-		},
-		{
-			"label": "DELETE build folder",
-			"type": "shell",
-			"command": "rm -r BUILD",
+			"command": ".vscode/tasks.sh Cmake",
 			"problemMatcher": []
 		}
 	]
