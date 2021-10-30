@@ -2,9 +2,39 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "REBUILD_TEST",
+			"type": "shell",
+			"command": ".vscode/tasks.sh rebuild_test",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
 			"label": "BUILD_TEST",
 			"type": "shell",
-			"command": "cd BUILD && cmake .. . && make clean && make && cd test && ./codeTest",
+			"command": ".vscode/tasks.sh build_test",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "REBUILD_APP",
+			"type": "shell",
+			"command": ".vscode/tasks.sh rebuild_app",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "BUILD_APP",
+			"type": "shell",
+			"command": ".vscode/tasks.sh build_app",
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
@@ -14,25 +44,13 @@
 		{
 			"label": "CLEAN",
 			"type": "shell",
-			"command": "cd BUILD && make clean",
+			"command": ".vscode/tasks.sh Clean",
 			"problemMatcher": []
 		},
 		{
 			"label": "CMAKE",
 			"type": "shell",
-			"command": "cd BUILD && cmake .. .",
-			"problemMatcher": []
-		},
-		{
-			"label": "CREATE build folder",
-			"type": "shell",
-			"command": "mkdir BUILD",
-			"problemMatcher": []
-		},
-		{
-			"label": "DELETE build folder",
-			"type": "shell",
-			"command": "rm -r BUILD",
+			"command": ".vscode/tasks.sh Cmake",
 			"problemMatcher": []
 		}
 	]

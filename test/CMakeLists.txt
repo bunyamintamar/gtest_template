@@ -1,13 +1,15 @@
+#  This file was created automatically - [BUNYAMIN TAMAR]
+#
+#  USAGE
+#  Please add lib file of your application to LIBRARIES block below
+
+
 ######### CMAKE VERSION ########################
 cmake_minimum_required(VERSION 3.16)
 set(This codeTest)
 
 ######### PROJECT NAME #########################
 project(${This} C CXX)
-
-######### FOLDERS ##############################
-add_subdirectory(googletest)
-include_directories(googletest/include)
 
 ######### HEADERS - SOURCES ####################
 file(GLOB SOURCES "*.cpp")
@@ -17,10 +19,7 @@ add_executable(${This} ${SOURCES})
 
 ######### LIBRARIES ############################
 target_link_libraries(${This} PUBLIC
-    gtest
-    myProject
+    gtest     # MUST BE ADDED
+    pthread   # MUST BE ADDED
+    develop   #     <--------------- user lib(s)
 )
-
-################################################
-# Bunyamin TAMAR - bunyamintamar@yandex.com
-################################################

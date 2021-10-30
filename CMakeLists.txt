@@ -8,15 +8,3 @@ project(${This} C CXX)
 ######### FOLDERS ##############################
 add_subdirectory(develop)
 add_subdirectory(test)
-
-######### HEADERS - SOURCES ####################
-file(GLOB SOURCES "develop/*.cpp")
-
-######### OTHERS ###############################
-
-######### LIBRARIES ############################
-add_library(${This} STATIC ${SOURCES})
-
-################################################
-# Bunyamin TAMAR - bunyamintamar@yandex.com
-################################################
