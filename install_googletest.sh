@@ -61,9 +61,11 @@ echo ----------------------------------------------------
 echo
 echo
 echo
-echo ----------------------------------------------------
-echo written by BUNYAMIN TAMAR - bunyamintamar@yandex.com
-echo https://www.linkedin.com/in/bunyamintamar
-echo ----------------------------------------------------
+echo '-----------------------------------------------------------------'
+echo '|  written by BUNYAMIN TAMAR                                    |'
+echo '|  Mail     -> bunyamintamar@yandex.com                         |'
+echo '|  GitHub   -> https://github.com/bunyamintamar/gtest_template  |'
+echo '|  Linkedin -> https://www.linkedin.com/in/bunyamintamar        |'
+echo '-----------------------------------------------------------------'
 echo good luck!
 echo
