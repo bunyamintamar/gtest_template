@@ -11,24 +11,21 @@ type `chmod +x install_googletest.sh`
 and  
 type `./install_googletest.sh`  
 
-# STEP 3
-type `sudo apt-get install cmake` (if necessary)  
-
-# STEP 4
+# STEP 3 *(NOT necessary)*
 open gtest_folder with **VSCODE**  
 type **CTRL+K** and **CTRL+S** (go to **keyboard shortcuts**)  
 find **Tasks:Run Task**  
 type **CTRL+B** for **Keybinding**  
 close this tab
 
-# STEP 5
+# STEP 4
 open your code  
-type **CTRL+B**  
+type **CTRL+B** (go to **Terminal > Run Task..**)  
 select **REBUILD_APP**  
 *You can see output of your code*
 
-# STEP 6
-type **CTRL+B**  
+# STEP 5
+type **CTRL+B** (go to **Terminal > Run Task..**)  
 select **REBUILD_TEST**  
 *You can see output of your test*  
 
