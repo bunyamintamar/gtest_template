@@ -6,9 +6,10 @@ echo ----------------------------------------------------
 echo
 
 # reinstall exist cmake
+sudo apt-get update
+sudo apt-get install build-essential -y
 sudo apt-get remove cmake -y
 sudo apt-get install cmake -y
-sudo apt-get update
 echo ----------------------------------------------------
 echo CMAKE reinstalled
 echo ----------------------------------------------------
