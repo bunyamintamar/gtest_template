@@ -6,10 +6,11 @@ clone this repository
 
 # STEP 2
 go into **gtest_template** folder  
-open terminal  
-type `chmod +x install_googletest.sh`  
-and  
-type `./install_googletest.sh`  
+open terminal and type below commands  
+```
+chmod +x install_googletest.sh
+./install_googletest.sh
+```  
 
 # STEP 3 *(NOT necessary)*
 open gtest_folder with **VSCODE**  
