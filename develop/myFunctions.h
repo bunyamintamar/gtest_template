@@ -1,5 +1,5 @@
-#ifndef _ADD_S_H
-#define _ADD_S_H
+#ifndef _ADD_H
+#define _ADD_H
 
 int add(int a, int b);
 
